@@ -1,0 +1,97 @@
+
+/* Nền phần giới thiệu sản phẩm */
+.product-hero {
+    background: linear-gradient(135deg, #f8f9fa, #eef3ff);
+}
+
+/* Khung ảnh sản phẩm */
+.product-image-wrapper {
+    min-height: 350px;
+}
+
+/* Ảnh điện thoại */
+.product-image {
+    width: 100%;
+    max-width: 480px;
+    max-height: 480px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+/* Phần mô tả tính năng */
+.feature-intro {
+    max-width: 600px;
+}
+
+.feature-card {
+    border-radius: 18px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Icon tính năng */
+.feature-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: #e7efff;
+    color: #0d6efd;
+    font-size: 26px;
+}
+
+/* Ảnh minh họa thiết kế */
+.showcase-image {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+}
+
+/* Khu vực thông số */
+.specification-section {
+    background-color: #f8f9fa;
+}
+
+.specification-item {
+    height: 100%;
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+}
+
+/* Khung kêu gọi hành động */
+.purchase-banner {
+    background: linear-gradient(135deg, #0d6efd, #172554);
+}
+
+/* Hiển thị trên màn hình nhỏ */
+@media (max-width: 575.98px) {
+    .product-hero {
+        text-align: center;
+    }
+
+    .product-hero .display-3 {
+        font-size: 2.5rem;
+    }
+
+    .product-image-wrapper {
+        min-height: auto;
+    }
+
+    .product-image {
+        max-height: 340px;
+    }
+
+    .showcase-image {
+        max-height: 320px;
+    }
+
+    .product-hero .d-flex {
+        justify-content: center;
+    }
+}

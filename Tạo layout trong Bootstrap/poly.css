@@ -1,0 +1,160 @@
+
+/* HEADER */
+header {
+    position: relative;
+    min-height: 220px;
+    overflow: hidden;
+    background-color: #337ab7;
+    background-image: linear-gradient(135deg, #337ab7, #173b62);
+    margin-bottom: 0;
+}
+
+.header-object {
+    height: 220px;
+    max-width: 60%;
+    object-fit: cover;
+    opacity: 0.75;
+}
+
+.shopping-mall {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+    z-index: 1;
+    font-variant: small-caps;
+    color: white;
+}
+
+.shopping-mall > h1 {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: 42px;
+    color: white;
+    letter-spacing: 0.3px;
+    text-shadow: 0 0 2px black;
+    padding-bottom: 8px;
+    border-bottom: 1px dotted #ddd;
+    margin: 0;
+}
+
+.shopping-mall > h5 {
+    margin-top: 8px;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+/* NAVIGATION */
+.navbar {
+    border-radius: 0;
+    margin-bottom: 15px;
+}
+
+/* GIỎ HÀNG */
+.poly-cart {
+    margin-top: 5px;
+}
+
+.poly-cart ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-variant: small-caps;
+}
+
+.poly-cart .panel-heading strong {
+    font-variant: small-caps;
+    font-size: larger;
+    text-shadow: 0 0 2px darkgray;
+}
+
+.poly-cart .panel-body {
+    padding: 10px;
+}
+
+.poly-cart img {
+    max-height: 100px;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* DANH SÁCH SẢN PHẨM */
+.poly-prod {
+    text-align: center;
+    padding: 5px;
+}
+
+.poly-prod .panel {
+    height: 100%;
+    margin-bottom: 15px;
+    transition: box-shadow 0.2s ease;
+}
+
+.poly-prod .panel:hover {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.poly-prod .panel-heading {
+    font-weight: bold;
+}
+
+.poly-prod .panel-body {
+    height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.poly-prod .panel-body img {
+    height: 150px;
+    max-width: 95%;
+    width: auto;
+    object-fit: contain;
+}
+
+.poly-prod .panel-footer {
+    color: #d9534f;
+    font-size: 16px;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+footer .panel-heading {
+    padding: 15px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 767px) {
+    header {
+        min-height: 180px;
+    }
+
+    .header-object {
+        height: 180px;
+        max-width: 70%;
+    }
+
+    .shopping-mall {
+        left: 15px;
+        bottom: 15px;
+        right: 10px;
+    }
+
+    .shopping-mall > h1 {
+        font-size: 28px;
+    }
+
+    .shopping-mall > h5 {
+        font-size: 12px;
+    }
+
+    .poly-cart img {
+        max-height: 80px;
+    }
+}

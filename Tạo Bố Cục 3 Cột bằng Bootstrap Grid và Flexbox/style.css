@@ -1,0 +1,150 @@
+
+/* CÀI ĐẶT CHUNG */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212529;
+    line-height: 1.6;
+}
+
+/* HERO SECTION */
+.hero-section {
+    background: linear-gradient(135deg, #eaf2ff, #f8f9fa);
+    padding-top: 80px !important;
+    padding-bottom: 80px !important;
+}
+
+.hero-section h1 {
+    color: #173b70;
+}
+
+.hero-section p {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #5c6670;
+}
+
+/* BỐ CỤC 3 CỘT */
+.layout-column {
+    min-height: 230px;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.layout-column:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.column-one {
+    background-color: #f1f5f9;
+    color: #212529;
+}
+
+.column-two {
+    background-color: #6c757d;
+    color: white;
+}
+
+.column-three {
+    background-color: #e8f2ff;
+    color: #212529;
+}
+
+.section-icon {
+    font-size: 40px;
+    color: #0d6efd;
+}
+
+.column-two .section-icon {
+    color: white;
+}
+
+/* MARGIN VÀ PADDING */
+.spacing-section {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+}
+
+.spacing-section h2 {
+    color: #173b70;
+}
+
+/* CAROUSEL */
+.carousel-image {
+    height: 430px;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.carousel-caption {
+    bottom: 12%;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.carousel-caption h3 {
+    font-size: 2rem;
+}
+
+/* FORM */
+#contact {
+    scroll-margin-top: 20px;
+}
+
+#contact .card {
+    border-radius: 14px;
+}
+
+#contact .form-control {
+    padding: 11px 12px;
+}
+
+#contact .form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+/* FOOTER */
+footer {
+    margin-bottom: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 767.98px) {
+    .hero-section {
+        padding-top: 55px !important;
+        padding-bottom: 55px !important;
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .layout-column {
+        min-height: 190px;
+    }
+
+    .carousel-image {
+        height: 280px;
+    }
+
+    .carousel-caption {
+        bottom: 5%;
+        left: 12%;
+        right: 12%;
+    }
+
+    .carousel-caption h3 {
+        font-size: 1.4rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.9rem;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,132 @@
+
+/* CÀI ĐẶT CHUNG */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 70px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #212529;
+}
+
+/* CAROUSEL */
+.hero-image {
+    height: 520px;
+    object-fit: cover;
+    filter: brightness(55%);
+}
+
+.carousel-caption {
+    top: 50%;
+    bottom: auto;
+    left: 12%;
+    right: 12%;
+    transform: translateY(-50%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.carousel-caption h1,
+.carousel-caption h2 {
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption p {
+    text-shadow: 0 1px 5px rgba(0, 0, 0, 0.8);
+}
+
+/* SECTION CHÀO MỪNG */
+.welcome-section {
+    min-height: 300px;
+}
+
+.welcome-description {
+    max-width: 760px;
+    line-height: 1.8;
+}
+
+/* THẺ DỊCH VỤ */
+.service-card {
+    border: 1px solid #e9ecef;
+    border-radius: 12px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    font-size: 42px;
+    color: #0d6efd;
+}
+
+/* FORM LIÊN HỆ */
+.contact-section {
+    scroll-margin-top: 60px;
+}
+
+#contactForm {
+    border: 1px solid #e9ecef;
+}
+
+#contactForm .form-control {
+    padding: 10px 12px;
+}
+
+#contactForm .form-control:focus {
+    border-color: #86b7fe;
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+}
+
+/* FOOTER */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+
+.social-links a {
+    color: white;
+    font-size: 22px;
+    transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+    color: #0d6efd;
+}
+
+/* RESPONSIVE CHO ĐIỆN THOẠI */
+@media (max-width: 767.98px) {
+    .hero-image {
+        height: 360px;
+    }
+
+    .carousel-caption {
+        left: 10%;
+        right: 10%;
+    }
+
+    .carousel-caption h1 {
+        font-size: 1.8rem;
+    }
+
+    .carousel-caption h2 {
+        font-size: 1.6rem;
+    }
+
+    .carousel-caption p {
+        font-size: 0.95rem;
+    }
+
+    .carousel-caption .btn {
+        font-size: 0.9rem;
+        padding: 8px 14px;
+    }
+
+    .welcome-section {
+        min-height: auto;
+    }
+}
